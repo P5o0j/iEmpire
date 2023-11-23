@@ -305,7 +305,11 @@ template {
 
 body {
   background-color: #999999;
-  margin: 0 5%; }
+  margin: 0 5%;
+  background-image: url("../img/fingerprint.png");
+  background-repeat: no-repeat;
+  background-size: 500px 700px;
+  background-position: center -20%; }
 
 .logo {
   width: 150px; }
@@ -386,7 +390,9 @@ main {
 /* end of media query */
 @media only screen and (min-width: 1140px) {
   body {
-    margin: 0 10%; } }
+    margin: 0 10%;
+    background-size: 700px 900px;
+    background-position: center -10%; } }
 /* end of media query */
 
 /*# sourceMappingURL=style.css.map */
