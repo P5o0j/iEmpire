@@ -325,7 +325,8 @@ button#hamburgerBtn {
   float: right; }
 
 nav {
-  font-family: "Playpen Sans", cursive; }
+  font-family: "Playpen Sans", cursive;
+  font-weight: bold; }
 
 nav ul {
   margin: 0;
