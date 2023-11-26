@@ -359,7 +359,49 @@ nav ul {
 /***** MAIN *****/
 main {
   font-family: "Permanent Marker", cursive;
-  padding-top: 50px; }
+  padding-top: 70px; }
+
+/***** BACK TO TOP *****/
+#backToTop {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 20px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border-style: dotted;
+  border-color: #8f0000;
+  outline: none;
+  /* Remove outline */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 10px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  transition: transform 0.2s; }
+
+#backToTop:hover {
+  background-color: #555;
+  /* Add a dark-grey background on hover */
+  transform: scale(1.2); }
+
+.back-to-top {
+  height: 30px; }
+
+/***** FOOTER *****/
+footer {
+  font-family: "Permanent Marker", cursive; }
+
+.footer-main {
+  padding: 15px 0; }
+
+.bottom-bar-right {
+  text-align: right; }
 
 @media only screen and (min-width: 768px) {
   header {
@@ -386,13 +428,17 @@ main {
   nav a:hover {
     box-shadow: 1px 1px 5px #888888;
     border-radius: 10px;
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+
+  /***** FOOTER *****/ }
 /* end of media query */
 @media only screen and (min-width: 1140px) {
   body {
     margin: 0 10%;
     background-size: 700px 900px;
-    background-position: center -10%; } }
+    background-position: center -10%; }
+
+  /***** FOOTER *****/ }
 /* end of media query */
 
 /*# sourceMappingURL=style.css.map */
