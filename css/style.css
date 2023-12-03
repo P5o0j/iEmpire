@@ -401,6 +401,20 @@ footer {
 .footer-main {
   padding: 15px 0; }
 
+.footer-one,
+.footer-two,
+.footer-three {
+  margin-bottom: 15px; }
+
+.bottom-bar {
+  font-size: x-small;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; }
+
+.bottom-bar-left {
+  width: 75%; }
+
 .bottom-bar-right {
   text-align: right; }
 
@@ -431,7 +445,15 @@ footer {
     border-radius: 10px;
     font-size: 1.2rem; }
 
-  /***** FOOTER *****/ }
+  /***** FOOTER *****/
+  .footer-main {
+    display: flex;
+    justify-content: space-between; }
+
+  .footer-one,
+  .footer-two,
+  .footer-three {
+    width: 32%; } }
 /* end of media query */
 @media only screen and (min-width: 1140px) {
   body {

@@ -110,6 +110,23 @@ footer {
 
 .footer-main {
   padding: 15px 0;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-direction: column;
+}
+.footer-one,
+.footer-two,
+.footer-three {
+  margin-bottom: 15px;
+}
+.bottom-bar {
+  font-size: x-small;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.bottom-bar-left {
+  width: 75%;
 }
 .bottom-bar-right {
   text-align: right;
