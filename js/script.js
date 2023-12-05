@@ -25,12 +25,18 @@ const timeElement = document.getElementById("clock");
 
 function updateTime() {
   const now = new Date();
+  // const day = now.getDate();
+  const day = now.getDate();
+  const month = now.getMonth() + 1;
+  const year = now.getFullYear();
   const hours = now.getHours();
   const minutes = now.getMinutes();
   const seconds = now.getSeconds();
 
   // Format the string with leading zeroes
-  const clockStr = `${hours.toString().padStart(2, "0")}:${minutes
+  const clockStr = `${day.toString().padStart(2, 0)}/${month
+    .toString()
+    .padStart(2, 0)}/${year} ${hours.toString().padStart(2, "0")}:${minutes
     .toString()
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 

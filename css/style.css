@@ -406,6 +406,13 @@ footer {
 .footer-three {
   margin-bottom: 15px; }
 
+.footer-three {
+  text-align: center; }
+
+.socials {
+  display: flex;
+  justify-content: space-evenly; }
+
 .bottom-bar {
   font-size: x-small;
   display: flex;
@@ -413,10 +420,13 @@ footer {
   margin-bottom: 5px; }
 
 .bottom-bar-left {
-  width: 75%; }
+  width: 70%; }
 
 .bottom-bar-right {
   text-align: right; }
+
+.social-icon {
+  width: 50px; }
 
 @media only screen and (min-width: 768px) {
   header {
