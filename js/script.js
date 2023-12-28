@@ -1,3 +1,5 @@
+"use strict";
+
 // Get the button:
 let mybutton = document.getElementById("backToTop");
 
@@ -45,3 +47,59 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+// CARD MODAL
+
+const openModal = function () {
+  modal.style.display = "block";
+  overlay.style.display = "block";
+  overlay.classList.remove("hidden");
+};
+
+// TEST 3
+// create references to the modal...
+var modal = document.getElementById("myModal");
+// var modal = document.querySelector(".modal");
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName("modal-img");
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function (evt) {
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+    openModal();
+  };
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+const closeModal = function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+  overlay.classList.add("hidden");
+};
+
+span.onclick = function () {
+  closeModal();
+};
+
+const overlay = document.querySelector(".overlay");
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+};

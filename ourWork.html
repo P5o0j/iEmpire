@@ -30,7 +30,7 @@
     />
     <meta name="author" content="iEmpire" />
 
-    <title>Creating new world</title>
+    <title>iEmpire | Our Work</title>
 
     <!-- Open Graph Protocol-->
     <meta property="og:title" content="iEmpire" />
@@ -65,8 +65,12 @@
       <div class="row limited burger">
         <button id="hamburgerBtn">&#9776;</button>
         <ul id="primaryNav">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <li><a href="./financialServices.html">Financial Services</a></li>
+          <li class="active">
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./financialServices.html">Financial Services</a>
+          </li>
           <li><a href="./ourWork.html">Our Work</a></li>
           <li><a href="./ourSites.html">Our Sites</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
@@ -77,39 +81,47 @@
 
     <!-- MAIN  -->
     <main>
-      <div>
-        <h2>
-          Welcome to iEmpire: Elevating Your Brand, Empowering Your Business
-        </h2>
-        <p>
-          At iEmpire, we champion the dreamers, the doers, the small businesses,
-          and the artists seeking to leave their mark on the world. Our mission
-          is clear: to provide a comprehensive suite of services designed to
-          uplift and empower your brand.
-        </p>
-        <p>
-          <strong>Digital Empowerment for Small Enterprises:</strong> We
-          specialize in translating your vision into a digital masterpiece. From
-          bespoke website designs and secure hosting to distinctive domains that
-          resonate, we ensure that your online presence is as unique as your
-          business.
-        </p>
-        <p>
-          <strong>Promotion Beyond Pixels:</strong> It's not just about pixels
-          and code; it's about tangible impact. Our design experts craft
-          business cards, flyers, and leaflets that transcend the ordinary,
-          making your brand unforgettable in the hands of your audience.
-        </p>
-
-        <p>
-          <strong>Financial Solutions for All:</strong> Recognizing the diverse
-          financial needs of our community, iEmpire extends its financial
-          services to include everyone. Whether you're a small business or an
-          individual, our tailored solutions encompass everything from smart
-          budgeting strategies to offering mortgages, loans, and insurance.
-        </p>
-        <h3>iEmpire: Where Your Dreams Become Digital Realities</h3>
+      <!-- CARDS -->
+      <div class="card">
+        <img
+          src="./img/test.jpeg"
+          alt="Avatar"
+          style="width: 100%"
+          class="modal-img show-modal"
+        />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
       </div>
+      <div class="card">
+        <img
+          src="./img/test2.jpeg"
+          alt="Avatar"
+          style="width: 100%"
+          class="modal-img show-modal"
+        />
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+      <div class="overlay hidden"></div>
+      <!-- TEST MODAL
+      <div class="modal">
+        <button class="close-modal">&times;</button>
+        <div id="modal-out"></div>
+      </div>
+
+       -->
+
+      <!-- BACK TO TOP  -->
       <button onclick="topFunction()" id="backToTop" title="Go to top">
         <img src="./img/backToTop.png" alt="back to top" class="back-to-top" />
       </button>

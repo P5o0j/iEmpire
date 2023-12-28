@@ -77,7 +77,59 @@
 
     <!-- MAIN  -->
     <main>
-      <div>THIS IS A CONTACT FORM</div>
+ <!-- CONTACT FORM -->
+ <div class="form" id="contact">
+  <!-- CONTACT FORM -->
+  <form id="myForm" method="POST" enctype="text/plain" name="FormData">
+    <div class="form-row1" id="form-row1">
+      <fieldset class="contactForm" id="contactForm">
+        <legend>Contact Us</legend>
+        <p>
+          <label for="name"
+            >Name<br />
+            <input
+              type="name"
+              name="name"
+              id="name"
+              required
+              minlength="3"
+              maxlength="35"
+          /></label>
+        </p>
+        <p>
+          <label for="phone"
+            >Phone Number<br />
+            <input type="tel" id="phone" name="phone"
+          /></label>
+        </p>
+        <p>
+          <label for="email"
+            >Email Address<br />
+            <input type="email" name="email" id="email" required
+          /></label>
+        </p>
+        <input type="hidden" name="source" value="ContactForm" />
+        <p>
+          <label for="message"
+            >Message: <br />
+            <textarea
+              cols="25"
+              rows="4"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+          </label>
+        </p>
+
+        <button type="reset" id="messageReset">Reset</button>
+        <button type="submit" id="messageSend">Send</button>
+        <button id="orderBtn">Order</button>
+      </fieldset>
+    </div>
+
+
+      <!-- BACK TO TOP -->
       <button onclick="topFunction()" id="backToTop" title="Go to top">
         <img src="./img/backToTop.png" alt="back to top" class="back-to-top" />
       </button>
