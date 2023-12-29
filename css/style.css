@@ -308,8 +308,8 @@ body {
   margin: 0 5%;
   font-size: x-large;
   color: #919191;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   background-repeat: no-repeat; }
 
 .logo {
@@ -368,12 +368,20 @@ main {
   background-position: center center; }
 
 /***** CARDS *****/
+.card-row {
+  display: flex;
+  flex-direction: column; }
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 25%;
-  padding: 5px; }
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 400px;
+  text-align: center; }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
@@ -406,13 +414,13 @@ main {
   display: none; }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   z-index: 5; }
 
 /* Style the Image Used to Trigger the Modal */
@@ -449,6 +457,9 @@ main {
   display: block;
   width: 80%;
   max-width: 700px; }
+
+.modal-img {
+  height: 75%; }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
@@ -600,6 +611,24 @@ footer {
   main {
     background-size: 40% 100%; }
 
+  /***** CARDS *****/
+  .card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .card {
+    max-width: 30%; }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px; }
+
   /***** FOOTER *****/
   .footer-main {
     display: flex;
@@ -614,6 +643,9 @@ footer {
 @media only screen and (min-width: 1140px) {
   body {
     margin: 0 10%; }
+
+  .card {
+    max-width: 24%; }
 
   /***** FOOTER *****/ }
 /* end of media query */

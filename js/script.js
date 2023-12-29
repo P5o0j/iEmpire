@@ -56,20 +56,25 @@ const openModal = function () {
   overlay.classList.remove("hidden");
 };
 
-// TEST 3
+const closeModal = function () {
+  modal.style.display = "none";
+  overlay.style.display = "none";
+  overlay.classList.add("hidden");
+};
+
 // create references to the modal...
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 // var modal = document.querySelector(".modal");
 // to all images -- note I'm using a class!
-var images = document.getElementsByClassName("modal-img");
+let images = document.getElementsByClassName("modal-img");
 // the image in the modal
-var modalImg = document.getElementById("img01");
+let modalImg = document.getElementById("img01");
 // and the caption in the modal
-var captionText = document.getElementById("caption");
+let captionText = document.getElementById("caption");
 
 // Go through all of the images with our custom class
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
+for (let i = 0; i < images.length; i++) {
+  let img = images[i];
   // and attach our click listener for this image.
   img.onclick = function (evt) {
     modalImg.src = this.src;
@@ -78,13 +83,7 @@ for (var i = 0; i < images.length; i++) {
   };
 }
 
-var span = document.getElementsByClassName("close")[0];
-
-const closeModal = function () {
-  modal.style.display = "none";
-  overlay.style.display = "none";
-  overlay.classList.add("hidden");
-};
+let span = document.getElementsByClassName("close")[0];
 
 span.onclick = function () {
   closeModal();

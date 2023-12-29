@@ -5,11 +5,11 @@ body {
   margin: 0 5%;
   font-size: x-large;
   color: #919191;
-  background-color: #000000;
+  // background-color: #000000;
   // background-image: linear-gradient(147deg, #000000 0%, #434343 74%);
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  // background-color: #2b4162;
-  // background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  // background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-color: #2b4162;
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
 
   background-repeat: no-repeat;
   // background-attachment: fixed;
@@ -93,12 +93,20 @@ main {
 }
 
 /***** CARDS *****/
+.card-row {
+  display: flex;
+  flex-direction: column;
+}
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 25%;
+  width: 100%;
   padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 400px;
+  text-align: center;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -135,22 +143,15 @@ main {
 .hidden {
   display: none;
 }
-// .modal {
-// position: absolute;
-// top: 50%;
-// left: 50%;
-// transform: translate(-50%, -50%);
-//   width: 70%;
-//   z-index: 10;
-// }
+
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
   z-index: 5;
 }
 
@@ -186,6 +187,9 @@ main {
   display: block;
   width: 80%;
   max-width: 700px;
+}
+.modal-img {
+  height: 75%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */

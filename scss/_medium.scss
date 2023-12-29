@@ -37,6 +37,27 @@ main {
   background-size: 40% 100%;
 }
 
+/***** CARDS *****/
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  max-width: 30%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
 /***** FOOTER *****/
 .footer-main {
   display: flex;
