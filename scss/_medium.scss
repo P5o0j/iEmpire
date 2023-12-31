@@ -58,6 +58,18 @@ main {
   padding: 2px 16px;
 }
 
+/***** CONTACT FORM *****/
+.form {
+  display: flex;
+  flex-direction: row;
+}
+form {
+  min-width: 49%;
+}
+.contact-icon {
+  min-width: 49%;
+}
+
 /***** FOOTER *****/
 .footer-main {
   display: flex;

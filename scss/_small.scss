@@ -245,6 +245,11 @@ main {
   }
 }
 
+/***** CONTACT FORM *****/
+fieldset {
+  border-radius: 10px;
+}
+
 /***** BACK TO TOP *****/
 #backToTop {
   display: none; /* Hidden by default */
@@ -293,6 +298,9 @@ footer {
 //   display: flex;
 //   align-content: center;
 // }
+.footer-two > ul {
+  padding: 0;
+}
 .socials {
   display: flex;
   justify-content: space-around;
@@ -314,7 +322,10 @@ footer {
 }
 .company {
   list-style-type: none;
-  // font-size: small;
+  font-size: small;
+}
+.company > li {
+  padding-bottom: 5px;
 }
 .zoom {
   transition: transform 0.2s;

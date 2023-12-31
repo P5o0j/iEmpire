@@ -503,6 +503,10 @@ main {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
+/***** CONTACT FORM *****/
+fieldset {
+  border-radius: 10px; }
+
 /***** BACK TO TOP *****/
 #backToTop {
   display: none;
@@ -549,6 +553,9 @@ footer {
   margin-bottom: 25px;
   text-align: center; }
 
+.footer-two > ul {
+  padding: 0; }
+
 .socials {
   display: flex;
   justify-content: space-around; }
@@ -569,7 +576,11 @@ footer {
   width: 50px; }
 
 .company {
-  list-style-type: none; }
+  list-style-type: none;
+  font-size: small; }
+
+.company > li {
+  padding-bottom: 5px; }
 
 .zoom {
   transition: transform 0.2s; }
@@ -628,6 +639,17 @@ footer {
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px; }
+
+  /***** CONTACT FORM *****/
+  .form {
+    display: flex;
+    flex-direction: row; }
+
+  form {
+    min-width: 49%; }
+
+  .contact-icon {
+    min-width: 49%; }
 
   /***** FOOTER *****/
   .footer-main {
