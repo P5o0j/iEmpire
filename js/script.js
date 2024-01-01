@@ -48,6 +48,24 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 
+// MENU ELEMENTS FADE
+const nav = document.querySelector(".nav-links");
+
+const handleHover = function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const link = e.target;
+    const siblings = link.closest(".nav-links").querySelectorAll(".nav-link");
+
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+  }
+};
+
+nav.addEventListener("mouseover", handleHover.bind(0.3));
+
+nav.addEventListener("mouseout", handleHover.bind(1));
+
 // CARD MODAL
 
 const openModal = function () {
