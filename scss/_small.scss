@@ -244,10 +244,21 @@ main {
     width: 100%;
   }
 }
-
-/***** CONTACT FORM *****/
-fieldset {
-  border-radius: 10px;
+/***** LIGHTBOX *****/
+.ourSites-logo {
+  width: 200px;
+}
+.lightbox-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.lightbox-row > a {
+  padding: 5px;
+}
+.lb-img {
+  max-width: 100%;
+  cursor: pointer;
 }
 
 /***** BACK TO TOP *****/

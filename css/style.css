@@ -503,9 +503,21 @@ main {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
-/***** CONTACT FORM *****/
-fieldset {
-  border-radius: 10px; }
+/***** LIGHTBOX *****/
+.ourSites-logo {
+  width: 200px; }
+
+.lightbox-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; }
+
+.lightbox-row > a {
+  padding: 5px; }
+
+.lb-img {
+  max-width: 100%;
+  cursor: pointer; }
 
 /***** BACK TO TOP *****/
 #backToTop {
@@ -640,6 +652,18 @@ footer {
   .container {
     padding: 2px 16px; }
 
+  /***** LIGHTBOX *****/
+  .lightbox-row {
+    display: flex;
+    flex-direction: row; }
+
+  .lb-img {
+    max-width: 90%;
+    height: 200px; }
+
+  .ourSites-logo {
+    width: 300px; }
+
   /***** CONTACT FORM *****/
   .form {
     display: flex;
@@ -668,6 +692,20 @@ footer {
 
   .card {
     max-width: 24%; }
+
+  /***** LIGHTBOX *****/
+  .lightbox-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
+  .lightbox-row > a {
+    padding: 10px;
+    display: flex;
+    justify-content: center; }
+
+  .lb-img {
+    height: 300px; }
 
   /***** FOOTER *****/ }
 /* end of media query */

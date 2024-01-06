@@ -7,4 +7,22 @@ body {
   max-width: 24%;
 }
 
+/***** LIGHTBOX *****/
+.lightbox-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  // flex-wrap: wrap;
+}
+.lightbox-row > a {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.lb-img {
+  height: 300px;
+  // max-width: 100%;
+}
+
 /***** FOOTER *****/

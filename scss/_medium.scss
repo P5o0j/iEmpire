@@ -58,6 +58,27 @@ main {
   padding: 2px 16px;
 }
 
+/***** LIGHTBOX *****/
+.lightbox-row {
+  display: flex;
+  flex-direction: row;
+  // height: 300px;
+  // justify-content: space-between;
+}
+// .lightbox-row > a {
+//   height: 500px;
+//   width: 500px;
+//   // justify-content: center;
+// }
+.lb-img {
+  max-width: 90%;
+  height: 200px;
+  // height: 200px;
+}
+.ourSites-logo {
+  width: 300px;
+}
+
 /***** CONTACT FORM *****/
 .form {
   display: flex;
