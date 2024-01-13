@@ -261,6 +261,19 @@ main {
   cursor: pointer;
 }
 
+/***** CONTACT *****/
+.contact-form {
+  border-radius: 10px;
+}
+.contact-icon {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /***** BACK TO TOP *****/
 #backToTop {
   display: none; /* Hidden by default */
