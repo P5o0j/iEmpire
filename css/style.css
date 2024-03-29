@@ -308,8 +308,7 @@ body {
   margin: 0 5%;
   font-size: x-large;
   color: #919191;
-  background-color: #2b4162;
-  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  background-color: #000000;
   background-repeat: no-repeat; }
 
 .logo {
@@ -612,6 +611,25 @@ footer {
 .zoom:hover {
   transform: scale(1.5); }
 
+.api {
+  white-space: nowrap;
+  /* Prevents text from wrapping */
+  margin-top: 25px; }
+
+.api::after {
+  content: attr(data-text);
+  /* Use attribute to avoid content being empty for animation */
+  display: inline-block;
+  animation: scrollText 60s linear infinite;
+  /* Apply the animation */ }
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%);
+    /* Start position, completely off-screen to the right */ }
+  100% {
+    transform: translateX(-100%);
+    /* End position, completely off-screen to the left */ } }
 @media only screen and (min-width: 768px) {
   header {
     display: flex;
